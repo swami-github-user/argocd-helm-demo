@@ -13,7 +13,7 @@ spec:
         app: "httpd"
     spec:
       containers:
-      - name: nginx
+      - name: "nginx"
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: 80
